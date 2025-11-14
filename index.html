@@ -3,22 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Principal </title>
+    <title>Menú Principal de Proyectos</title>
     <style>
-        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f4; }
-        .menu-container { text-align: center; }
-        .boton { display: inline-block; padding: 15px 30px; margin: 10px; font-size: 18px; color: white; background-color: #007bff; border-radius: 5px; text-decoration: none; }
-        .boton:hover { background-color: #0056b3; }
-        .boton-bitacora { background-color: #28a745; }
-        .boton-bitacora:hover { background-color: #218838; }
+        /* Estilos generales */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5; /* Un gris claro de fondo */
+            margin: 0;
+            color: #333;
+        }
+
+        /* Contenedor principal */
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título */
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #1a202c;
+            font-weight: 600;
+        }
+
+        /* Contenedor de botones */
+        .button-group {
+            display: flex;
+            gap: 20px; /* Espacio entre los botones */
+        }
+
+        /* Estilo de los botones */
+        .boton {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            min-width: 150px; /* Ancho mínimo */
+        }
+
+        .boton:hover {
+            transform: translateY(-2px); /* Pequeño salto al pasar el mouse */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Botón de Inventario (Azul) */
+        .boton-inventario {
+            background-color: #007bff;
+        }
+
+        .boton-inventario:hover {
+            background-color: #0069d9;
+        }
+
+        /* Botón de Bitácora (Verde) */
+        .boton-bitacora {
+            background-color: #28a745;
+        }
+
+        .boton-bitacora:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
-    <div class="menu-container">
-        <h1>Selecciona una pagina </h1>
 
-      <a href="https://inventario-lesco.onrender.com" ...>Ir al Inventario</a>
-      <a href="https://bitacora-lesco.onrender.com" ...>Ir a la Bitácora</a>
+    <div class="container">
+        <h1>Selecciona un Proyecto</h1>
+        
+        <div class="button-group">
+            <a href="https://inventario-lesco.onrender.com" class="boton boton-inventario">
+                Inventario
+            </a>
+            
+            <a href="https://bitacora-lesco.onrender.com" class="boton boton-bitacora">
+                Bitácora
+            </a>
+        </div>
     </div>
+
 </body>
 </html>
